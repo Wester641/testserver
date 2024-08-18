@@ -10,7 +10,7 @@ const telegramToken = '7206464827:AAEDnkJSGJ6_53wnEAk8Gf36Oh55em0B_Y4';
 const chatId = '1873800563';
 
 const corsOptions = {
-  origin: ['http://localhost:3000', 'https://localserver-3dc89a41feaf.herokuapp.com'],
+  origin: ['http://localhost:3000', 'https://jack-node-js-e202b53f8dad.herokuapp.com/send/'],
   methods: ['GET', 'POST'],
   allowedHeaders: ['Content-Type'],
 };
