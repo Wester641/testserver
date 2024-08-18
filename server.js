@@ -21,14 +21,14 @@ app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
 
 app.post('/send', async (req, res) => {
-  const { name, email, message } = req.body;
+  const { name, email, phone, message } = req.body;
 
   try {
     await axios.post(
       `https://api.telegram.org/bot${telegramToken}/sendMessage`,
       {
         chat_id: chatId,
-        text: `Name: ${name}\nEmail: ${email}\nMessage: ${message}`,
+        text: `Name: ${name}\nEmail: ${email}\nPhone: ${phone},\nMessage: ${message}`,
       }
     );
 
