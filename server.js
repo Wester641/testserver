@@ -11,7 +11,7 @@ const chatId = '1873800563';
 
 // Options for cors
 const corsOptions = {
-  origin: ['http://localhost:3000', 'https://jack-node-js-e202b53f8dad.herokuapp.com'],
+  origin: ['http://localhost:3000', 'https://jack-node-js-e202b53f8dad.herokuapp.com', 'https://zafarzhon.vercel.app'],
   methods: ['GET', 'POST'],
   allowedHeaders: ['Content-Type'],
 };
