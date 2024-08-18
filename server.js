@@ -4,16 +4,17 @@ const axios = require('axios');
 const cors = require('cors');
 
 const app = express();
-const port = 3001;
+const port = process.env.PORT || 5000;
 
 const telegramToken = '7206464827:AAEDnkJSGJ6_53wnEAk8Gf36Oh55em0B_Y4';
 const chatId = '1873800563';
 
 const corsOptions = {
-  origin: 'http://localhost:3000',
+  origin: ['http://localhost:3000', 'https://localserver-3dc89a41feaf.herokuapp.com'],
   methods: ['GET', 'POST'],
   allowedHeaders: ['Content-Type'],
 };
+
 
 app.use(cors(corsOptions));
 app.use(bodyParser.urlencoded({ extended: true }));
