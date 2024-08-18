@@ -9,6 +9,7 @@ const port = process.env.PORT || 5000;
 const telegramToken = '7206464827:AAEDnkJSGJ6_53wnEAk8Gf36Oh55em0B_Y4';
 const chatId = '1873800563';
 
+// Options for cors
 const corsOptions = {
   origin: ['http://localhost:3000', 'https://jack-node-js-e202b53f8dad.herokuapp.com'],
   methods: ['GET', 'POST'],
